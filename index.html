@@ -1,0 +1,63 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>College Results Portal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      text-align: center;
+      margin-top: 100px;
+    }
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      display: inline-block;
+    }
+    input {
+      padding: 10px;
+      width: 250px;
+      margin: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .result {
+      margin-top: 30px;
+      font-size: 1.5em;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>College Results Portal</h2>
+    <form id="resultForm">
+      <input type="text" placeholder="Register Number" required><br>
+      <input type="text" placeholder="Hall Ticket Number" required><br>
+      <button type="submit">Get Results</button>
+    </form>
+    <div class="result" id="resultBox"></div>
+  </div>
+
+  <script>
+    const form = document.getElementById('resultForm');
+    const resultBox = document.getElementById('resultBox');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      resultBox.innerHTML = "😂 You just got fooled! MAY PRANK!";
+    });
+  </script>
+</body>
+</html>
